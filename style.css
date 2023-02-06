@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    margin: 30px auto;
+    text-align: center;
+}
+.btnsDiv{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+button{
+    all: unset;
+    width: 15%;
+    margin: 30px;
+    padding: 10px;
+    background-color: rgba(77, 0, 128, 0.862);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5vw;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 50ms;
+}
+button:hover,.active{
+    background-color: rgba(154, 36, 232, 0.862);
+    letter-spacing: 1px;
+}
+.images{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+.images img{
+    width: 30%;
+    display: none;
+    box-shadow: 0 10px 15px #1111116d,
+                0 -10px 15px #1111116d ;
+                transition: 50ms;
+   animation: zoom 1s linear ;         
+}
+
+img:hover{
+    transform:scale(1.1)
+}
+  
+
+@keyframes zoom {
+    0%{
+       transform: scale(0);
+       opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
